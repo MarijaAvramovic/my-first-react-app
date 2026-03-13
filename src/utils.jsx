@@ -1,8 +1,8 @@
-export default function getImageUrl(person) {
-    return (
-         'https://i.imgur.com/' +
-         person.imgId +
-         person.imgSize +
-         '.jpg'
-    );
-};
+export default function getImageUrl(imageId, size = 's') {
+  return (
+    'https://i.imgur.com/' +
+    imageId +
+    size +
+    '.jpg'
+  );
+}
